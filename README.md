@@ -32,8 +32,7 @@ MIDAS requires an input file, written in either json or yaml, that specifies:
 
 
 ## Acknowledgements
-
-All current Greyfish servers used for testing are setup using the Jetstream \[1\]\[2\] and Chameleon\[3\] systems. We are grateful to XSEDE for providing the allocation required for implementing this project. This project is generously supported through the National Science Foundation (NSF) award \#1664022.  
+The development and testing for this project was done using the Jetstream \[1\]\[2\] and Chameleon\[3\] systems. We are grateful to XSEDE for providing the allocation required for implementing this project. This project is generously supported through the National Science Foundation (NSF) award \#1664022.  
 
 
 ### References
