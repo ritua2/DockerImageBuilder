@@ -2,7 +2,7 @@
 
 -------
 
-MIDAS is a development tools to assist in the automatic creation of docker images.
+MIDAS is a development tool to assist in the automatic creation of docker images.
 
 
 ## Installation
