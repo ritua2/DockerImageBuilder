@@ -8,6 +8,7 @@ MIDAS is a development tools to assist in the automatic creation of docker image
 ## Installation
 
 Requirement:
+* Python3
 * Python YAML
 
 ```bash
@@ -29,6 +30,21 @@ MIDAS requires an input file, written in either json or yaml, that specifies:
 * Files and directories (optional)
 * Order of execution (optional)
 
+
+
+
+To show a list of available flags:
+```bash
+python3 MIDAS.py --help
+# Or
+python3 MIDAS.py -h
+```
+
+
+## Examples
+
+The subdirectory [tests](./tests) contains a series of provided input files and the generated Dockerfiles. All common examples share the same filename before
+*.midas*. i.e. *sample-input.midas.json* and *sample-input.midas.yml* both can be used to generate the Dockerfile *sample-input-Dockerfile*.
 
 
 ## Acknowledgements
