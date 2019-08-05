@@ -2,7 +2,7 @@
 
 -------
 
-MIDAS is a development tools to assist in the automatic creation of docker images.
+MIDAS is a development tool to assist in the automatic creation of docker images.
 
 
 ## Installation
@@ -66,7 +66,8 @@ The subdirectory [tests](./tests) contains a series of provided input files and 
 
 ## Acknowledgements
 
-All current servers used for testing are setup using the Jetstream \[1\]\[2\] and Chameleon\[3\] systems. We are grateful to XSEDE for providing the allocation required for implementing this project. This project is generously supported through the National Science Foundation (NSF) award \#1664022.  
+The development and testing for this project was done using the Jetstream \[1\]\[2\] and Chameleon\[3\] systems. We are grateful to XSEDE for providing the allocation required for implementing this project. This project is generously supported through the National Science Foundation (NSF) award \#1664022.  
+
 
 
 ### References
