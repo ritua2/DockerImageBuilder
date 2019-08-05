@@ -30,6 +30,23 @@ MIDAS requires an input file, written in either json or yaml, that specifies:
 * Files and directories (optional)
 * Order of execution (optional)
 
+Run the script *MIDAS.py*
+
+```bash
+python3 MIDAS.py
+```
+
+Flags:
+
+>	-f, --file: Input file, may be JSON or YAML. Default: midas.yml
+>	-o, --output: Output Dockerfile path. Default: Dockerfile
+>	--ignore-warnings: Ignore all warnings. 'yes'/'y'/'Y'/'1' for True. Default: False.
+>	--ignore-cmd-warnings: Ignore no default command warning. 'yes'/'y'/'Y'/'1' for True.. Default: False.
+>	--ignore-copy-warnings: Ignore no added file warnings. 'yes'/'y'/'Y'/'1' for True.. Default: False.
+>	--ignore-run-warning: Ignore no provisioning command warnings. 'yes'/'y'/'Y'/'1' for True.. Default: False.
+>	--strict: Treat warnings as errors, stop program when one occurs. 'yes'/'y'/'Y'/'1' for True.. Deafult: False.
+>	-h, --help: Output Dockerfile path. Default: Dockerfile
+
 
 
 
@@ -49,7 +66,7 @@ The subdirectory [tests](./tests) contains a series of provided input files and 
 
 ## Acknowledgements
 
-All current Greyfish servers used for testing are setup using the Jetstream \[1\]\[2\] and Chameleon\[3\] systems. We are grateful to XSEDE for providing the allocation required for implementing this project. This project is generously supported through the National Science Foundation (NSF) award \#1664022.  
+All current servers used for testing are setup using the Jetstream \[1\]\[2\] and Chameleon\[3\] systems. We are grateful to XSEDE for providing the allocation required for implementing this project. This project is generously supported through the National Science Foundation (NSF) award \#1664022.  
 
 
 ### References
