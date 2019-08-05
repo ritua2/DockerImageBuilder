@@ -39,12 +39,19 @@ python3 MIDAS.py
 Flags:
 
 >	-f, --file: Input file, may be JSON or YAML. Default: midas.yml
+
 >	-o, --output: Output Dockerfile path. Default: Dockerfile
+
 >	--ignore-warnings: Ignore all warnings. 'yes'/'y'/'Y'/'1' for True. Default: False.
+
 >	--ignore-cmd-warnings: Ignore no default command warning. 'yes'/'y'/'Y'/'1' for True.. Default: False.
+
 >	--ignore-copy-warnings: Ignore no added file warnings. 'yes'/'y'/'Y'/'1' for True.. Default: False.
+
 >	--ignore-run-warning: Ignore no provisioning command warnings. 'yes'/'y'/'Y'/'1' for True.. Default: False.
+
 >	--strict: Treat warnings as errors, stop program when one occurs. 'yes'/'y'/'Y'/'1' for True.. Deafult: False.
+
 >	-h, --help: Output Dockerfile path. Default: Dockerfile
 
 
