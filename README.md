@@ -22,7 +22,7 @@ cd DockerImageBuilder
 
 ## Usage
 
-MIDAS requires an input file, written in either json or yaml, that specifies:
+Midas requires an input file, written in either json or yaml, that specifies:
 
 * Base image
 * Working directory (optional)
