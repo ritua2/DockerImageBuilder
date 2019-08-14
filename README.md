@@ -1,8 +1,8 @@
-# Midas
+# The "DockerImageBuilder" tool has been named Midas.
 
 -------
 
-Midas is a tool for automatically creating docker images from the source-code and instructions provided by the users.
+Midas can automatically create docker images from the source-code and the instructions provided by the users.
 
 
 ## Installation
