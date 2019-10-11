@@ -30,10 +30,16 @@ MIDAS requires an input file, written in either json or yaml, that specifies:
 * Files and directories (optional)
 * Order of execution (optional)
 
-Run the script *MIDAS.py*
+Write a file with the above specifications, then run the script *MIDAS.py*, specifying the input file with the *-f* flag (set to *midas.yml* by default).
+
+MIDAS will create a Dockerfile (named *Dockerfile* if the *-o* flag is not set) if successful, which can then be used to create an image
+
 
 ```bash
-python3 MIDAS.py
+python3 MIDAS.py -o custom_Dockerfile_name
+
+# Build the image
+docker build -t image_tag_name -f custom_Dockerfile_name
 ```
 
 Flags:
