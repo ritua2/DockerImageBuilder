@@ -1,8 +1,8 @@
-# MIDAS (Multiple Input Docker Automation System)
+# The "DockerImageBuilder" tool has been named Midas.
 
 -------
 
-MIDAS is a development tool to assist in the automatic creation of docker images.
+Midas can automatically create docker images from the source-code and the instructions provided by the users.
 
 
 ## Installation
@@ -22,7 +22,7 @@ cd DockerImageBuilder
 
 ## Usage
 
-MIDAS requires an input file, written in either json or yaml, that specifies:
+Midas requires an input file, written in either json or yaml, that specifies:
 
 * Base image
 * Working directory (optional)
