@@ -10,9 +10,11 @@ Midas can automatically create docker images from the source-code and the instru
 Requirement:
 * Python3
 * Python YAML
+* Docker
 
 ```bash
 pip3 install PyYAML
+pip3 install docker
 
 git clone https://github.com/ritua2/DockerImageBuilder
 cd DockerImageBuilder
@@ -32,32 +34,27 @@ Midas requires an input file, written in either json or yaml, that specifies:
 
 Write a file with the above specifications, then run the script *MIDAS.py*, specifying the input file with the *-f* flag (set to *midas.yml* by default).
 
-MIDAS will create a Dockerfile (named *Dockerfile* if the *-o* flag is not set) if successful, which can then be used to create an image
+MIDAS will create a Dockerfile (named *Dockerfile* if the *-o* flag is not set) if successful, which can then be used to create an image, it can also build the image directly if the *-t* flag is set.
+
+Note: sudo permission may be required to run the script if building an image and/or pushing it to dockerhub.
 
 
 ```bash
-python3 MIDAS.py -o custom_Dockerfile_name
-
-# Build the image
-docker build -t image_tag_name -f custom_Dockerfile_name
+python3 MIDAS.py -o custom_Dockerfile_name -t image_tag_name
 ```
 
 Flags:
 
 >	-f, --file: Input file, may be JSON or YAML. Default: midas.yml
-
 >	-o, --output: Output Dockerfile path. Default: Dockerfile
-
+>	-t, --Tag: Tag to name the image when built. If default, image will not be built. Default: False.
 >	--ignore-warnings: Ignore all warnings. 'yes'/'y'/'Y'/'1' for True. Default: False.
-
 >	--ignore-cmd-warnings: Ignore no default command warning. 'yes'/'y'/'Y'/'1' for True.. Default: False.
-
 >	--ignore-copy-warnings: Ignore no added file warnings. 'yes'/'y'/'Y'/'1' for True.. Default: False.
-
 >	--ignore-run-warning: Ignore no provisioning command warnings. 'yes'/'y'/'Y'/'1' for True.. Default: False.
-
 >	--strict: Treat warnings as errors, stop program when one occurs. 'yes'/'y'/'Y'/'1' for True.. Deafult: False.
-
+>	--push: Pushes to dockerhub. 'yes'/'y'/'Y'/'1' for True.. Deafult: False.
+>	-u, --username: Dockerhub username, will prompt the user if not set and pushing.
 >	-h, --help: Output Dockerfile path. Default: Dockerfile
 
 
